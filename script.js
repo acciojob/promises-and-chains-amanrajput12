@@ -25,15 +25,11 @@ btnclick.addEventListener("click",async(e)=>{
 		alert("Please enter valid details")
 		return
 	}
-	else{
-		try{
-		let message = await checkAge(age.value,name.value);
-			alert(message);
-		}
-		catch(error){
-			alert(error)
-		}
-		
-	}
+	checkAge(age.value,name.value).then((message)=>{
+		alert(message);
+	})
+	.catch((error)=>{
+		alert(error)
+	})
 	
 })
