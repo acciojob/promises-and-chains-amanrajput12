@@ -11,7 +11,7 @@ function checkAge(age,name){
             resolve(`Welcome,${name}. You can vote.`);
 			 }
 			 else{
-				 reject(`oh sorry ${name}. You aren't old enough.`)
+				 reject(`Oh sorry ${name}. You aren't old enough.`)
 			 }
 			 
 },4000)
@@ -22,7 +22,7 @@ btnclick.addEventListener("click",async(e)=>{
 	e.preventDefault()
 // alert(age.value)
 	if(!(age.value) || !(name.value)){
-		alert("Please enter valid details.")
+		alert("Please enter valid details")
 		return
 	}
 	else{
